@@ -42,19 +42,17 @@ function App(){
           digital solutions.
         </p>
 <div className="hero-buttons">
+<a href="#projects" className="primary-button">
+  View My Projects
+</a>
 
-  <button className="primary-button">
-    View My Projects
-  </button>
-
-  <button className="secondary-button">
-    Contact Me
-  </button>
-
+<a href="#contact" className="secondary-button">
+  Contact Me
+</a>
   <a
     href="/documents/Kennedy-CV.pdf"
     download
-    className="cv-button"
+    className="primary-button"
   >
     Download My CV
   </a>
@@ -232,9 +230,15 @@ function App(){
     <p>Location: Kenya</p>
   </div>
 
-  <a href="mailto:mwendwak439@gmail.com" className="contact-button">
-    Send Me an Email
-  </a>
+<a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=mwendwak439@gmail.com&su=Portfolio%20Inquiry"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="contact-button"
+>
+  Email Me
+</a>
+
 </section>
 {/* footer */}
 <footer className="footer">

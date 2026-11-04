@@ -72,35 +72,50 @@ nav li:hover {
   display: flex;
   gap: 15px;
   margin-top: 25px;
+   flex-wrap: wrap;
 }
 
+
 .primary-button,
-.secondary-button {
-  padding: 13px 24px;
+.secondary-button
+ {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 0 12px;
+  margin: 0;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .primary-button {
   background-color: #2563eb;
   color: white;
-  border: 1px solid #2563eb;
+  border: 2px solid #2563eb;
 }
 
 .primary-button:hover {
   background-color: #1d4ed8;
+  border-color: #1e40af;
+  transform: translateY(-3px);
 }
 
 .secondary-button {
-  background-color: white;
+  background-color:transparent;
   color: #2563eb;
-  border: 1px solid #2563eb;
+  border: 2px solid #2563eb;
 }
 
 .secondary-button:hover {
-  background-color: #eff6ff;
+  background-color: #2563eb;
+  color: white;
+  transform: translateY(-3px);
 }
 
 .about {
@@ -324,7 +339,9 @@ nav a:hover {
   color: white;
   padding: 12px 25px;
   border-radius: 6px;
-  text-decoration: none;
+  text-decoration: none; 
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
 .contact-button:hover {
@@ -439,20 +456,10 @@ nav a:hover {
   object-fit: cover;
   border-radius: 8px;
 }
-.cv-button {
-  display: inline-block;
-  margin: 15px 10px;
-  padding: 12px 25px;
-  background-color: white;
-  color: #2563eb;
-  border: 2px solid #2563eb;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
+
 
 .cv-button:hover {
   background-color: #2563eb;
   color: white;
+  transform: translateY(-3px);
 }
